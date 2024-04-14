@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Cricket</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Hand Cricket</h2>
+        <div class="d-flex justify-content-center align-items-center">Total score: &nbsp;<h1 id="totalScore" class="m-0 text-danger">0</h1></div>
+        <div class="row">
+            <div class="col-lg-6 my-2">
+                <div class="center-div">
+                    My value
+                    <h1 id="showMyValue">0</h1>
+                    <div class="Buttons">
+                        <button onclick="handleMyValueClick(1)" class="btn btn-secondary">1</button>
+                        <button onclick="handleMyValueClick(2)" class="btn btn-secondary">2</button>
+                        <button onclick="handleMyValueClick(3)" class="btn btn-secondary">3</button>
+                        <button onclick="handleMyValueClick(4)" class="btn btn-secondary">4</button>
+                        <button onclick="handleMyValueClick(5)" class="btn btn-secondary">5</button>
+                        <button onclick="handleMyValueClick(6)" class="btn btn-secondary">6</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 my-2">
+                <div class="center-div">
+                    Computer value
+                    <h1 id="showComputerValue">0</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myModal" data-bs-backdrop="static" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-danger text-center w-100">OUT!</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Something went wrong!...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <audio id="modalSound">
+      <source src="./assets/audio/failure-1-89170.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="./assets/js/popper.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
